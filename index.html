@@ -1,0 +1,47 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Ayomide Boye-Ogundiya">
+        <meta name="description" content="Shape Factory">
+        <meta name="keywords" content="web development, html, css, javascript, winnipeg, canada">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css">
+        <title>My Shape Factory</title>
+        <link rel="icon" href="./asset/image/white-cutout-64px.png" type="icon/png">
+        <link rel="stylesheet" href="./assets/style/main.css" media="all">
+        <script src="./assets/script/index.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <section>
+                <h1>Shape Creator</h1>
+                <div class="controls">
+                    <select id="shapeSelect">
+                        <option value="shape" disabled selected>Select shape</option>
+                        <option value="circle">Circle</option>
+                        <option value="square">Square</option>
+                    </select>
+                    <select id="colorSelect">
+                        <option value="color" disabled selected>Select color</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="orange">Orange</option>
+                        <option value="pink">Pink</option>
+                        <option value="purple">Purple</option>
+                    </select>
+                    <button onclick="createShape()">Create</button>
+                </div>
+                <div class="grid" id="shapeGrid">
+    
+                </div>
+                <p class="notification">notification</p>
+            </section>
+        </main>
+    </body>
+</html>
